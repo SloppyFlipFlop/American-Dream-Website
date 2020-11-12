@@ -36,6 +36,7 @@ nav ul li {
 main {
     background-color: var(--Main-background-color);
     width: 100%;
+    height: fit-content;
     /* margin-right: 5px;
     margin-left: 5px; */
     /* padding-top: 0;
@@ -47,7 +48,7 @@ main {
 
 main .main-section {
     background-color: var(--Main-Section-Background-color);
-    border: 2px solid var(--border-color);
+    border: 2.5px solid var(--border-color);
 
     padding-top: 10px;
     padding-right: 10px;
@@ -157,8 +158,8 @@ main .dream-quote-area h1 {
     border-radius: .5rem;
     padding-left: 5px;
     padding-right: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .dream:hover {
