@@ -1,0 +1,353 @@
+
+:root {
+    --highlighted-color: #EE6C4D;
+    --Main-background-color: #3d5a80;
+    --Main-Section-Background-color: #98c1d9;
+    --border-color: #293241;
+    --American-Dream-Boxes: #88B7D3;
+    --navbar-color: #3d5a80;
+}
+
+/* Nav Layout */
+
+nav{
+    background-color: var(--nav-background-color);
+    grid: flex;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+nav ul{
+    list-style-type: none;
+    flex-direction: row;
+    /* flex-flow: row; */
+}
+
+nav ul li {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Main CSS Layout */
+
+main {
+    background-color: var(--Main-background-color);
+    width: 100%;
+    /* margin-right: 5px;
+    margin-left: 5px; */
+    /* padding-top: 0;
+    padding-right: 20px; */
+    /* padding-bottom: 0;
+    padding-left: 20px; */
+    font-family: 'Times New Roman', arial, serif;
+}
+
+main .main-section {
+    background-color: var(--Main-Section-Background-color);
+    border: 2px solid var(--border-color);
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: none;
+    margin-left: 20px;
+}
+
+main .main-section .title {
+    text-align: center;
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+main .logo img {
+    float: left;
+    border: 2px solid var(--border-color);
+    border-radius: 1rem;
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+main .main-section .summary-title {
+    font-size: 28px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+main .main-section .summary {
+    margin-bottom: 10px;
+    
+    margin-right: 30px;
+    /* padding-right: 50px; */
+}
+
+/* American dream quotes CSS Layout */
+
+/* /* main .main-section .dream-quote-area .american-dream-quotes-title {
+    display: grid;
+    font-size: 28px;
+    border: 2px solid var(--border-color);
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    background-color: var(--Main-background-color);
+} */
+/* 
+main .main-section .dream-quote-area .dreams {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; */
+    /* display: grid;
+    background-color: var(--American-Dream-Boxes);
+    border: 2px solid var(--border-color);
+    border-radius: 1rem;
+    width: 250px;
+    height: fit-content;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+} */ */
+
+/* main .main-section .dream-quote-area .dreams:hover {
+    background-color: var(--highlighted-color);
+    transform: translateY(-5px);
+} */ */
+
+/* main .dream-quote-area{
+    background-color: var(--Main-Section-Background-color);
+}
+
+main .dream-quote-area h1 {
+    font-size: 20px;
+} */
+
+/* h1 {
+    font-size: 28px;
+} */
+
+.dreamslisting {
+    background: white;
+    background-color: white;
+    border-radius: 1em;
+    justify-content: space-around;
+
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+
+    width: 200px;
+    height: fit-content;
+}
+
+.dream {
+    background-color: var(--American-Dream-Boxes);
+    transition-duration: 0.1s;
+    transition-property: transform background-color;
+    border: 2px solid var(--border-color);
+    border-radius: .5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dream:hover {
+    transform: translateY(-5px);
+    background-color: var(--highlighted-color);
+}
+
+.dreamlisting {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    flex-grow: 7;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Footer CSS Layout */
+
+footer {
+    background-color: #3d5a80;
+    color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 2px;
+    margin: 0px;
+}
+
+footer * {
+    padding: 1px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3d5a80;
+}
+
+footer a {
+    color: #88B7D3;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.Creators {
+    float: right;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+/* ~~~~~~~~~~~~~~~~~ */
+
+
+/* NavBar CSS Layout */
+
+header {
+    background-color: var(--navbar-color);
+    color: white;
+    width: 100%;
+    height: fit-content;
+    min-height: 3em;
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    padding: 2px;
+    margin: 0px;
+    font-family: 'Arvo', serif;
+    z-index: 50;
+}
+
+header * {
+    padding: 1px;
+    margin: 3px;
+}
+
+header h1 {
+    color: lightblue;
+    margin-right: 100px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+header h1:hover {
+    color: white;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* margin-right: auto;
+    margin-left: auto; */
+
+    padding-left: auto;
+    padding-right: auto;
+
+    
+}
+
+header form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+
+    flex-basis: fit-content;
+
+    padding-top: 10px;
+}
+
+header form input[type="search"] {
+    margin-top: 5px;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 30vw;
+
+    border-radius: 1em;
+    border: none;
+
+    padding: 2px;
+    padding-left: 6px;
+    
+
+    flex-shrink: 3;
+    flex-grow: 4;
+
+    transition-property: border-radius;
+    transition-duration: 0.5s;
+
+    width: 300px;
+    height: 30px;
+}
+
+header form input[type="search"]:focus {
+    border-radius: 0em;
+}
+
+header form input[type="submit"] {
+    background: none;
+    outline: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    border-radius: 3em;
+
+    margin-right: 500px;
+}
+
+header form input[type="submit"]:hover {
+    background: lightblue;
+    border-radius: 3em;
+}
+
+header form svg {
+    width: 32px;
+    height: 32px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+nav li a:hover {
+    color: lightblue;
+}
+
+.header img{
+    width: 300px;
+    height: 350px;
+    transform: translateY(-25px);
+}
+
+.header h1 {
+    padding-top: 60px;
+}
+
+/* ~~~~~~~~~~~~~~~~~ */
