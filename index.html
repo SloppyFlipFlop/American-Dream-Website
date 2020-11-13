@@ -15,10 +15,36 @@
     <link rel='stylesheet' href='style.css'>
 
     <link rel='shortcut icon' href='MyCustomFavicon.png' type='image/x-icon'>
+
+
+    <style>
+        .review {
+            background-color: whitesmoke;
+            transition-duration: 0.1s;
+            transition-property: transform background-color;
+        }
+
+        .review:hover {
+            transform: translateY(-5px);
+            background-color: #ffbb00;
+        }
+
+        .header {
+            color: #ffbb00;
+        }
+
+        .reviewlisting {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: space-around;
+            flex-grow: 7;
+        }
+    </style>
+
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <h1 onclick="location.href = 'Home-page.html'">Viewpoint</h1>
         <form action="search">
             <input type="search" name="search" id="searchbar" placeholder="Search here...">
@@ -64,6 +90,66 @@
         <p>Copyright 2020 Viewpoint | Icon Credits: <a href="https://www.svgbackgrounds.com/">VISIWIG</a></p>
         <div class="Creators">
             <p>Website Creator: David Nevarez</p>
+        </div>
+    </footer> -->
+
+    <header>
+        <h1 onclick="location.href = 'index.html'">Viewpoint</h1>
+        <form action="search">
+            <input type="search" name="search" id="searchbar" placeholder="Search here...">
+            <input type="submit" value="🔍">
+        </form>
+        <nav>
+            <ul>
+                <li><a href="index.html" style="color: #98c1d9">Home</a></li>
+                <li><a href="Article-page.html">Article</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="header">
+            <img src="images/Logo.png">
+        </div>
+
+        <div class="reviews">
+            <h2>What is this website?:</h2>
+            <div class="reviewlisting">
+                <!-- <div class="review">
+                    <p><em>"I'll never eat anything else again!"</em><span style="color: blue;"> - Jeff R.</span></p>
+                </div>
+                <div class="review">
+                    <p><em>"I left it out in the sun for a fortnight. It became harder than steel!"</em><span
+                            style="color: blue;"> - Carson K.</span></p>
+                </div>
+                <div class="review">
+                    <p><em>"Its a little mushy substance I put between my gums. It wasn't dip though."</em><span
+                            style="color: blue;"> - Bob A.</span></p>
+                </div>
+                <div class="review">
+                    <p><em>"The wholesale value is extremely convenient."</em><span style="color: blue;"> - Ted
+                            N.</span></p>
+                </div> -->
+
+                <p>THis website talks about the american dream and what its all about. If you have forgoten what the
+                    american
+                    dream is or you are just intrested in what i have to say, then this website is for you.</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h3>Contact Us:</h3>
+            <p>Buisness Email: <a target="_blank"
+                    href="https://accounts.google.com/signin/v2/identifier?hl=en&continue=https%3A%2F%2Fmail.google.com%2Fmail&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession">Viewpoint@gmail.com</a>
+            </p>
+            <p>Buisness Phone Number: <strong>602-678-9898</strong></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright 2020 Cramalot | Icon/Background Credits: <a href="https://www.svgbackgrounds.com/">VISIWIG</a></p>
+        <div class="Creators">
+            <p>Creators: Kevin Ochoa, David Nevarez, Timothy Phillips</p>
         </div>
     </footer>
 </body>
