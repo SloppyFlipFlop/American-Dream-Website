@@ -1,0 +1,66 @@
+:root {
+    --highlighted-color: #EE6C4D;
+    --Main-background-color: #3d5a80;
+    --Main-Section-Background-color: #98c1d9;
+    --border-color: #293241;
+    --American-Dream-Boxes: #88B7D3;
+    --navbar-color: #3d5a80;
+}
+
+/* Nav Layout */
+
+nav{
+    background-color: var(--nav-background-color);
+    grid: flex;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+nav ul{
+    list-style-type: none;
+    flex-direction: row;
+    /* flex-flow: row; */
+}
+
+nav ul li {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Footer CSS Layout */
+
+footer {
+    background-color: #3d5a80;
+    color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 2px;
+    margin: 0px;
+}
+
+footer * {
+    padding: 1px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3d5a80;
+}
+
+footer a {
+    color: #88B7D3;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.Creators {
+    float: right;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+/* ~~~~~~~~~~~~~~~~~ */
