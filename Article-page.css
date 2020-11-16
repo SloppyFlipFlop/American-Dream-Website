@@ -1,222 +1,30 @@
-
 :root {
-    --highlighted-color: #EE6C4D;
-    --Main-background-color: #3d5a80;
-    --Main-Section-Background-color: #98c1d9;
-    --border-color: #293241;
-    --American-Dream-Boxes: #88B7D3;
-    --navbar-color: #3d5a80;
+    --Footer-Background-Color: #1D4D9A;
+    --Header-Background-color: #1D4D9A;
+    --Special-Text-Color: #88B7D3;
+    --Summary-and-Qutoe-Background-Color: #437DDB;
+    --Dreams-Background-Color: #3171D8;
+    --Dreams-Background-Color-Hover: #A63446;
 }
 
-/* Nav Layout */
+/* Basic Website CSS Code */
 
-nav{
-    background-color: var(--nav-background-color);
-    grid: flex;
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
 
-nav ul{
-    list-style-type: none;
-    flex-direction: row;
-    /* flex-flow: row; */
-}
-
-nav ul li {
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* Main CSS Layout */
-
-main {
-    background-color: var(--Main-background-color);
-    width: 100%;
-    height: fit-content;
-    /* margin-right: 5px;
-    margin-left: 5px; */
-    /* padding-top: 0;
-    padding-right: 20px; */
-    /* padding-bottom: 0;
-    padding-left: 20px; */
-    font-family: 'Times New Roman', arial, serif;
-}
-
-main .main-section {
-    background-color: var(--Main-Section-Background-color);
-    border: 2.5px solid var(--border-color);
-
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-
-    margin-top: 0;
-    margin-right: 20px;
-    margin-bottom: none;
-    margin-left: 20px;
-}
-
-main .main-section .title {
-    text-align: center;
-    font-size: 48px;
-    padding-bottom: 20px;
-}
-
-main .logo img {
-    float: left;
-    border: 2px solid var(--border-color);
-    border-radius: 1rem;
-    max-width: 200px;
-    max-height: 200px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-main .main-section .summary-title {
-    font-size: 28px;
-    text-decoration: underline;
-    padding-bottom: 10px;
-}
-
-main .main-section .summary {
-    margin-bottom: 10px;
-    
-    margin-right: 30px;
-    /* padding-right: 50px; */
-}
-
-/* American dream quotes CSS Layout */
-
-/* /* main .main-section .dream-quote-area .american-dream-quotes-title {
-    display: grid;
-    font-size: 28px;
-    border: 2px solid var(--border-color);
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-bottom: 10px;
-    background-color: var(--Main-background-color);
-} */
-/* 
-main .main-section .dream-quote-area .dreams {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr; */
-    /* display: grid;
-    background-color: var(--American-Dream-Boxes);
-    border: 2px solid var(--border-color);
-    border-radius: 1rem;
-    width: 250px;
-    height: fit-content;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-} */ */
-
-/* main .main-section .dream-quote-area .dreams:hover {
-    background-color: var(--highlighted-color);
-    transform: translateY(-5px);
-} */ */
-
-/* main .dream-quote-area{
-    background-color: var(--Main-Section-Background-color);
-}
-
-main .dream-quote-area h1 {
-    font-size: 20px;
-} */
-
-/* h1 {
-    font-size: 28px;
-} */
-
-.dreamslisting {
-    background: white;
-    background-color: white;
-    border-radius: 1em;
-    justify-content: space-around;
-
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-
-    width: 200px;
-    height: fit-content;
-}
-
-.dream {
-    background-color: var(--American-Dream-Boxes);
-    transition-duration: 0.1s;
-    transition-property: transform background-color;
-    border: 2px solid var(--border-color);
-    border-radius: .5rem;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.dream:hover {
-    transform: translateY(-5px);
-    background-color: var(--highlighted-color);
-}
-
-.dreamlisting {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-around;
-    flex-grow: 7;
-}
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* Footer CSS Layout */
-
-footer {
-    background-color: #3d5a80;
-    color: white;
-    width: 100%;
-    height: auto;
-    display: flex;
-    padding: 2px;
+html, body {
     margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
 }
-
-footer * {
-    padding: 1px;
-    margin: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #3d5a80;
-}
-
-footer a {
-    color: #88B7D3;
-}
-
-footer a:hover {
-    color: white;
-}
-
-.Creators {
-    float: right;
-    margin-left: auto;
-    margin-right: 5px;
-}
-
-/* ~~~~~~~~~~~~~~~~~ */
-
-
-/* NavBar CSS Layout */
 
 header {
-    background-color: var(--navbar-color);
+    background-color: var(--Header-Background-color);
     color: white;
-    width: 100%;
+    width: calc(100% - 3px);
     height: fit-content;
     min-height: 3em;
     position: sticky;
@@ -235,10 +43,7 @@ header * {
 }
 
 header h1 {
-    color: lightblue;
-    margin-right: 100px;
-    margin-top: 15px;
-    margin-left: 20px;
+    color: var(--Special-Text-Color);
 }
 
 header h1:hover {
@@ -254,28 +59,14 @@ nav ul {
     list-style: none;
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    /* margin-right: auto;
-    margin-left: auto; */
-
-    padding-left: auto;
-    padding-right: auto;
-
-    
 }
 
 header form {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
-
-    /* margin: 0 auto; */
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: 0 auto;
     flex-basis: fit-content;
-
-    padding-top: 10px;
 }
 
 header form input[type="search"] {
@@ -283,22 +74,16 @@ header form input[type="search"] {
     outline: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 30vw;
-
     border-radius: 1em;
     border: none;
 
     padding: 2px;
     padding-left: 6px;
-    
 
     flex-shrink: 3;
     flex-grow: 4;
-
     transition-property: border-radius;
     transition-duration: 0.5s;
-
-    width: 300px;
-    height: 30px;
 }
 
 header form input[type="search"]:focus {
@@ -315,8 +100,6 @@ header form input[type="submit"] {
     transition-property: background-color;
     transition-duration: 0.5s;
     border-radius: 3em;
-
-    margin-right: 500px;
 }
 
 header form input[type="submit"]:hover {
@@ -329,26 +112,180 @@ header form svg {
     height: 32px;
 }
 
-nav li a {
+/* Footer CSS Layout */
+
+footer {
+    background-color: var(--Footer-Background-Color);
     color: white;
-    text-decoration: none;
-    margin-right: 40px;
-    margin-left: 10px;
+    width: calc(100% - 3px);
+    height: auto;
+    display: flex;
+    padding: 2px;
+    margin: 0px;
+}
+
+footer * {
+    padding: 1px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--Footer-Background-Color);
+}
+
+footer a {
+    color: var(--Special-Text-Color);
+}
+
+footer a:hover {
+    color: white;
+}
+
+.Creators {
+    float: right;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+body {
+    background-color: #225bb5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100%25 100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(357,718,347)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231c54ae'/%3E%3Cstop offset='0.02' stop-color='%23225bb5'/%3E%3Cstop offset='0.02' stop-color='%231863c4'/%3E%3Cstop offset='0.032' stop-color='%23225bb5'/%3E%3Cstop offset='0.032' stop-color='%230b4fad'/%3E%3Cstop offset='0.056' stop-color='%23225bb5'/%3E%3Cstop offset='0.056' stop-color='%230e50ad'/%3E%3Cstop offset='0.07' stop-color='%23225bb5'/%3E%3Cstop offset='0.07' stop-color='%23013a94'/%3E%3Cstop offset='0.1' stop-color='%23225bb5'/%3E%3Cstop offset='0.1' stop-color='%23225bb5'/%3E%3Cstop offset='0.126' stop-color='%23225bb5'/%3E%3Cstop offset='0.126' stop-color='%230460c7'/%3E%3Cstop offset='0.142' stop-color='%23225bb5'/%3E%3Cstop offset='0.142' stop-color='%230b368a'/%3E%3Cstop offset='0.159' stop-color='%23225bb5'/%3E%3Cstop offset='0.159' stop-color='%231d60bd'/%3E%3Cstop offset='0.17' stop-color='%23225bb5'/%3E%3Cstop offset='0.17' stop-color='%23143a8c'/%3E%3Cstop offset='0.197' stop-color='%23225bb5'/%3E%3Cstop offset='0.197' stop-color='%231b54ae'/%3E%3Cstop offset='0.218' stop-color='%23225bb5'/%3E%3Cstop offset='0.218' stop-color='%231b63c3'/%3E%3Cstop offset='0.239' stop-color='%23225bb5'/%3E%3Cstop offset='0.239' stop-color='%230b4199'/%3E%3Cstop offset='0.254' stop-color='%23225bb5'/%3E%3Cstop offset='0.254' stop-color='%231a5cb9'/%3E%3Cstop offset='0.283' stop-color='%23225bb5'/%3E%3Cstop offset='0.283' stop-color='%230d59b9'/%3E%3Cstop offset='0.294' stop-color='%23225bb5'/%3E%3Cstop offset='0.294' stop-color='%231064c8'/%3E%3Cstop offset='0.305' stop-color='%23225bb5'/%3E%3Cstop offset='0.305' stop-color='%23175dbc'/%3E%3Cstop offset='0.332' stop-color='%23225bb5'/%3E%3Cstop offset='0.332' stop-color='%231d57b1'/%3E%3Cstop offset='0.346' stop-color='%23225bb5'/%3E%3Cstop offset='0.346' stop-color='%231752ac'/%3E%3Cstop offset='0.362' stop-color='%23225bb5'/%3E%3Cstop offset='0.362' stop-color='%230a71dd'/%3E%3Cstop offset='0.381' stop-color='%23225bb5'/%3E%3Cstop offset='0.381' stop-color='%230772de'/%3E%3Cstop offset='0.415' stop-color='%23225bb5'/%3E%3Cstop offset='0.415' stop-color='%23113181'/%3E%3Cstop offset='0.428' stop-color='%23225bb5'/%3E%3Cstop offset='0.428' stop-color='%23215ab3'/%3E%3Cstop offset='0.442' stop-color='%23225bb5'/%3E%3Cstop offset='0.442' stop-color='%230b3488'/%3E%3Cstop offset='0.456' stop-color='%23225bb5'/%3E%3Cstop offset='0.456' stop-color='%23174094'/%3E%3Cstop offset='0.498' stop-color='%23225bb5'/%3E%3Cstop offset='0.498' stop-color='%230e3689'/%3E%3Cstop offset='0.511' stop-color='%23225bb5'/%3E%3Cstop offset='0.511' stop-color='%2318479d'/%3E%3Cstop offset='0.532' stop-color='%23225bb5'/%3E%3Cstop offset='0.532' stop-color='%231c56b0'/%3E%3Cstop offset='0.541' stop-color='%23225bb5'/%3E%3Cstop offset='0.541' stop-color='%23154aa2'/%3E%3Cstop offset='0.56' stop-color='%23225bb5'/%3E%3Cstop offset='0.56' stop-color='%23116fd7'/%3E%3Cstop offset='0.581' stop-color='%23225bb5'/%3E%3Cstop offset='0.581' stop-color='%231559b8'/%3E%3Cstop offset='0.6' stop-color='%23225bb5'/%3E%3Cstop offset='0.6' stop-color='%23045bc0'/%3E%3Cstop offset='0.618' stop-color='%23225bb5'/%3E%3Cstop offset='0.618' stop-color='%23146dd2'/%3E%3Cstop offset='0.656' stop-color='%23225bb5'/%3E%3Cstop offset='0.656' stop-color='%232059b3'/%3E%3Cstop offset='0.679' stop-color='%23225bb5'/%3E%3Cstop offset='0.679' stop-color='%230369d5'/%3E%3Cstop offset='0.689' stop-color='%23225bb5'/%3E%3Cstop offset='0.689' stop-color='%23052474'/%3E%3Cstop offset='0.720' stop-color='%23225bb5'/%3E%3Cstop offset='0.720' stop-color='%230461c8'/%3E%3Cstop offset='0.734' stop-color='%23225bb5'/%3E%3Cstop offset='0.734' stop-color='%2319489e'/%3E%3Cstop offset='0.748' stop-color='%23225bb5'/%3E%3Cstop offset='0.748' stop-color='%230879e8'/%3E%3Cstop offset='0.764' stop-color='%23225bb5'/%3E%3Cstop offset='0.764' stop-color='%231d4fa7'/%3E%3Cstop offset='0.788' stop-color='%23225bb5'/%3E%3Cstop offset='0.788' stop-color='%230d58b8'/%3E%3Cstop offset='0.808' stop-color='%23225bb5'/%3E%3Cstop offset='0.808' stop-color='%2307297a'/%3E%3Cstop offset='0.831' stop-color='%23225bb5'/%3E%3Cstop offset='0.831' stop-color='%23143c8f'/%3E%3Cstop offset='0.856' stop-color='%23225bb5'/%3E%3Cstop offset='0.856' stop-color='%230c49a5'/%3E%3Cstop offset='0.872' stop-color='%23225bb5'/%3E%3Cstop offset='0.872' stop-color='%230d2e7f'/%3E%3Cstop offset='0.894' stop-color='%23225bb5'/%3E%3Cstop offset='0.894' stop-color='%230c5ec1'/%3E%3Cstop offset='0.914' stop-color='%23225bb5'/%3E%3Cstop offset='0.914' stop-color='%230b2675'/%3E%3Cstop offset='0.942' stop-color='%23225bb5'/%3E%3Cstop offset='0.942' stop-color='%230867ce'/%3E%3Cstop offset='0.957' stop-color='%23225bb5'/%3E%3Cstop offset='0.957' stop-color='%23063185'/%3E%3Cstop offset='0.973' stop-color='%23225bb5'/%3E%3Cstop offset='0.973' stop-color='%231169ce'/%3E%3Cstop offset='1' stop-color='%23225bb5'/%3E%3Cstop offset='1' stop-color='%230b68cf'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' x='0' y='0' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+
+    margin: 0px;
+}
+
+
+
+/* ^^^ Basic Website CSS Code Above ^^^ */
+
+/* ~~~ Main CSS Layout ~~~ */
+
+main #title {
+    font-family: cursive;
+    -webkit-text-stroke: 1px #282828;
+    text-shadow: 0px 4px 4px var(--Special-Text-Color);
+    text-align: center;
+    font-size: 64px;
+}
+
+main .American-Dream-Summary-Area {
+    display: inline-block;
+
+    background-color: var(--Summary-and-Qutoe-Background-Color);
+
+    border: 2px solid black;
+    border-radius: 2rem;
+
+    height: fit-content;
+    width: calc(100% - 200px);
+    min-width: 3em;
+
+    margin-right: 5vw;
+    margin-left: 5vw;
     margin-top: 10px;
+    margin-bottom: 30px;
+
+    padding: 20px;
+
+    font-family: Helvetica;
+    font-size: 12px;
 }
 
-nav li a:hover {
-    color: lightblue;
+main .American-Dream-Summary-Area img{
+    float: left;
+
+    border: 2px solid black;
+    border-radius: 1.5rem;
+
+    max-width: 180px;
+    max-height: 100%;
+    
+    margin-right: 20px;
+    margin-bottom: 15px;
+
 }
 
-.header img{
-    width: 300px;
-    height: 350px;
-    transform: translateY(-25px);
+main .American-Dream-Summary-Area .American-Dream-Summary {
+    display: block;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
-.header h1 {
-    padding-top: 60px;
+main .quotes {
+    background-color: var(--Summary-and-Qutoe-Background-Color);
+    
+    border: 2px solid black;
+    border-radius: 2rem;
+
+    height: fit-content;
+    width: calc(100% - 160px);
+    
+
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 20px;
+
+    /* padding-right: 5px;
+    padding-left: 20px; */
+} 
+
+main .quotes .title-banner {
+    font-size: 32px;
+    font-family: cursive;
+    font-style: oblique;
+    
+    -webkit-text-stroke: 1px #282828;
+    text-shadow: 0px 4px 4px var(--Special-Text-Color);
+
+    padding-left: 15px;
 }
 
-/* ~~~~~~~~~~~~~~~~~ */
+
+main .quotes .American-dream-area .quote {
+    float: left;
+    width: calc(100% - 160px);
+    height: fit-content;
+    padding: 20px;
+
+    border: 2px solid black;
+    border-radius: 1rem;
+
+    margin-right: calc(5% - 2px);
+    margin-left: calc(5% - 2px);
+
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: var(--Dreams-Background-Color);
+}
+
+main .quotes .American-dream-area .quote:hover {
+    background-color: var(--Dreams-Background-Color-Hover);
+}
+
+main .quotes .American-dream-area::after {
+    content: "";
+    clear: both;
+    display: table;
+} 
+
+iframe {
+    border: 2px solid black;
+    border-radius: 2rem;
+
+    height: 300px;
+    width: 500px;
+
+    margin-left: 50vw;
+    transform: translate(-50%);
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* iframe:hover {
+    transform: scale(1) translateY(2px);
+    box-shadow: 1px 1px 5px black;
+} */
+
+/* ^^^ Main CSS Layout ^^^ */
